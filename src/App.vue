@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
     <full-page ref="fullpage" :options="options" id="fullpage">
     <div class="section">
       First section ...

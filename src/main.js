@@ -6,7 +6,7 @@ import router from './router'
 
 import VueMaterial from 'vue-material'
 import './assets/theme.scss'
-import VueFullPage from 'vue-fullpage'
+import VueFullPage from 'vue-fullpage.js'
 
 Vue.use(VueFullPage)
 Vue.use(VueMaterial)
