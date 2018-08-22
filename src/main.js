@@ -6,6 +6,7 @@ import router from './router'
 
 import VueMaterial from 'vue-material'
 import './assets/theme.scss'
+import 'vue-material/dist/theme/default-dark.css' // This line here
 import VueFullPage from 'vue-fullpage.js'
 
 Vue.use(VueFullPage)
@@ -18,5 +19,12 @@ new Vue({
   el: '#app',
   router,
   components: { App },
-  template: '<App/>'
+    template: '<App/>',
+    data: {
+        options: {
+            navigation: false,
+            showActiveTooltip: false,
+        anchors: ['page1', 'page2', 'page3'],
+        }
+    }
 })
