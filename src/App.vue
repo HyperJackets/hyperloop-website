@@ -4,7 +4,7 @@
     <full-page :options="options" id="fullpage" ref="fullpage" sectionsColor="#41b883">
         <div class="section" >
         <div class="fp-bg"></div>
-            <h3>vue-fullpage.js</h3>
+            <h1><span>vue-fullpage.js</span></h1>
         </div>
         <div class="section">
             <div class="slide">
@@ -56,43 +56,8 @@ export default {
  * --------------------------------------- */
 body {
     font-family: arial, helvetica;
-    color: blue;
 }
 .section{
-    position: relative;
-    text-align: center;
-}
-#section-1 h2{
-    color: #fff;
-    font-size: 10em;
-    font-weight: 900;
-}
-#section-1 h1{
-    font-size: 2em;
-    font-weight: 100;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    margin: 1.5em auto 1em auto;
-    color: #35495e;
-    padding-right: 30px;
-    padding-left: 30px;
-}
-#section-1 li {
-    display: inline-block;
-    margin: 1.25em 0.3em;
-}
-.section-1-button{
-    padding: 0.93em 1.87em;
-    background: #35495e;
-    border-radius: 5px;
-    display: block;
-    color: #fff;
-}
-h3{
-    font-size: 5em;
-    text-align: center;
-    color: #fff;
-    font-weight: bold;
 }
 #logo{
     position: fixed;

@@ -22,8 +22,8 @@ new Vue({
     template: '<App/>',
     data: {
         options: {
-            navigation: false,
-            showActiveTooltip: false,
+            navigation: true,
+            showActiveTooltip: true,
         anchors: ['page1', 'page2', 'page3'],
         }
     }
