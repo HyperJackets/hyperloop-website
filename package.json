@@ -12,6 +12,7 @@
   "dependencies": {
     "fullpage.js": "^3.0.2",
     "vue": "^2.5.2",
+    "vue-fullpage.js": "0.0.5",
     "vue-material": "latest",
     "vue-router": "^3.0.1"
   },
