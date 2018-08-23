@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-<!--<link rel="stylesheet" type="text/css" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css">-->
 
     <full-page id="fullpage" ref="fullpage">
-        <div class="section" >
+        <div class="section" id="stuff">
               <md-speed-dial id="menu" class="md-top-left" md-direction="bottom">
       <md-speed-dial-target class="md-primary">
-        <md-icon>my_location</md-icon>
+        <md-icon>menu</md-icon>
       </md-speed-dial-target>
 
       <md-speed-dial-content>
+
         <md-button class="md-icon-button">
           <md-icon>directions</md-icon>
           <md-tooltip md-direction="right">Directions</md-tooltip>
@@ -25,8 +25,10 @@
 
 
 
-
 <div class="content">
+<div class="content2">
+<img src="./assets/HyperLoopGradient.png" style="width:666px;height:auto;">
+</div>
   <svg class="rl-logo" width="606" height="300" viewBox="0 0 606 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
       <defs>
           <clipPath id="clipLogo">
@@ -47,16 +49,12 @@
 
 
         </div>
-        <div class="section">
 
-            Stuff
-            <md-icon class="v-scroll-reveal">thumb_up</md-icon>
-        </div>
-        <div class="section">
+        <div class="section" id="stuff2">
+            <h3>Section 2</h3>
+        </div>       
+        <div class="section" id="stuff3">
             <h3>Section 3</h3>
-        </div>
-        <div class="section">
-        Hello there! General Kenobi
         </div>
         </full-page>
   </div>
@@ -77,15 +75,21 @@ export default {
 
 .content {
   position: absolute;
-  top: 30rem;
+  top: 20rem;
   left: 50%;
   width: 606px;
   height: 300px;
   margin-top: -150px;
   margin-left: -303px;
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
 }
+
+.content2 {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
 
 .rl-logo {
   position: absolute;
