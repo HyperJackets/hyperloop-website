@@ -5,12 +5,26 @@ import App from './App'
 import router from './router'
 
 import VueMaterial from 'vue-material'
+import 'vue-material/dist/vue-material.min.css'
 import './assets/theme.scss'
-import 'vue-material/dist/theme/default-dark.css' // This line here
-import VueFullPage from 'vue-fullpage.js'
 
-Vue.use(VueFullPage)
+
+import VueFullPage from 'vue-fullpage.js'
+import VueScrollReveal from 'vue-scroll-reveal'
+
+
 Vue.use(VueMaterial)
+Vue.use(VueFullPage)
+
+Vue.use(VueScrollReveal, {
+  class: 'v-scroll-reveal', // A CSS class applied to elements with the v-scroll-reveal directive; useful for animation overrides.
+  duration: 800,
+  scale: 1,
+  distance: '30px',
+  mobile: true
+})
+
+
 
 Vue.config.productionTip = false
 
@@ -21,10 +35,14 @@ new Vue({
   components: { App },
     template: '<App/>',
     data: {
-        options: {
-            navigation: true,
-            showActiveTooltip: true,
-        anchors: ['page1', 'page2', 'page3'],
         }
-    }
 })
+
+
+new fullpage('#fullpage', {
+    autoScrolling: true,
+    scrollBar: false,
+    scrollOverflow: true
+})
+
+

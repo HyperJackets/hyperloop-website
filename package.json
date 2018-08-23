@@ -14,7 +14,8 @@
     "vue": "^2.5.2",
     "vue-fullpage.js": "0.0.5",
     "vue-material": "latest",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue-scroll-reveal": "^1.0.8"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

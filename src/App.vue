@@ -1,34 +1,45 @@
 <template>
   <div id="app">
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css">
-    <full-page :options="options" id="fullpage" ref="fullpage" sectionsColor="#41b883">
+<!--<link rel="stylesheet" type="text/css" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css">-->
+
+    <full-page id="fullpage" ref="fullpage">
         <div class="section" >
-        <div class="fp-bg"></div>
-            <h1><span>vue-fullpage.js</span></h1>
+              <md-speed-dial id="menu" class="md-top-left" md-direction="bottom">
+      <md-speed-dial-target class="md-primary">
+        <md-icon>my_location</md-icon>
+      </md-speed-dial-target>
+
+      <md-speed-dial-content>
+        <md-button class="md-icon-button">
+          <md-icon>directions</md-icon>
+          <md-tooltip md-direction="right">Directions</md-tooltip>
+        </md-button>
+
+        <md-button class="md-icon-button">
+          <md-icon>streetview</md-icon>
+        </md-button>
+      </md-speed-dial-content>
+    </md-speed-dial>
         </div>
         <div class="section">
-            <div class="slide">
-            <div class="fp-bg"></div>
-                <h3>Slide 2.1</h3>
-            </div>
-            <div class="slide">
-            <div class="fp-bg"></div>
-                <h3>Slide 2.2</h3>
-            </div>
-            <div class="slide">
-            <div class="fp-bg"></div>
-                <h3>Slide 2.3</h3>
-            </div>
+
+            Stuff
+            <md-icon class="v-scroll-reveal">thumb_up</md-icon>
         </div>
         <div class="section">
-        <div class="fp-bg"></div>
             <h3>Section 3</h3>
+        </div>
+        <div class="section">
+        Hello there! General Kenobi
         </div>
         </full-page>
   </div>
+
 </template>
 
+
 <script>
+// Code to export this template as a component.
 export default {
   name: 'App'
 }
@@ -40,26 +51,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  margin-top: 60px;
 }
-</style>
-
-<style>
-
-#section1 .fp-bg{
-    background-image: url('assets/logo.png');
-    background-size: cover;
-    background-position: center 80%;
-}
-
-/* Custom
- * --------------------------------------- */
-body {
-    font-family: arial, helvetica;
-}
-.section{
-}
-#logo{
+#menu{
     position: fixed;
     top: 20px;
     left: 20px;
@@ -71,4 +64,14 @@ body {
     -moz-font-smoothing: antialiased;
 }
 
+#fullpage .reveal {
+	transform: translateY(100px);
+	opacity: 0;
+	transition: opacity 1s, transform 1s;
+}
+
+#fullpage .active .reveal {
+	transform: translateX(0);
+	opacity: 1;
+}
 </style>
