@@ -5,31 +5,7 @@
 
 
     <full-page id="fullpage" ref="fullpage">
-        <div class="section" id="stuff">
-
-
-
-
-
-    <div class="phone-viewport" align="center">
-      <md-bottom-bar md-type="fixed" :md-theme="'bottom-bar-' + theme" md-sync-route>
-        <md-bottom-bar-item md-label="Home" md-icon="home" @click="theme = 'teal'" to="/page3"></md-bottom-bar-item>
-        <md-bottom-bar-item md-label="Pages" md-icon="pages" @click="theme = 'orange'"></md-bottom-bar-item>
-        <md-bottom-bar-item md-label="Posts" md-icon="/assets/icon-whatshot.svg" @click="theme = 'blue'"></md-bottom-bar-item>
-        <md-bottom-bar-item to="/page3"md-label="Favorites" md-icon="favorite" @click="theme = 'red'"></md-bottom-bar-item>
-      </md-bottom-bar>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
+        <div class="section">
 
 <md-speed-dial id="menu" class="md-top-left" md-direction="bottom">
       <md-speed-dial-target class="md-primary">
@@ -78,10 +54,23 @@
 
         </div>
 
-        <div class="section" id="stuff2">
-            <h3>Section 2</h3>
+
+
+        <div class="section">
+
+<!-- Diagonal Line -->
+<div class="header__bg">
+<div class="header__bg_1"></div>
+<div class="header__bg_2"></div>
+<div class="header__bg_3"></div>
+<div class="header__bg_4"></div>
+</div>
+
+
+
+<h3>Section 2</h3>
         </div>       
-        <div class="section" id="stuff3">
+        <div class="section">
             <h3>Section 3</h3>
         </div>
         </full-page>
@@ -102,6 +91,7 @@ export default {
 
 
 .content {
+  -webkit-order: 10;
   position: absolute;
   top: 20rem;
   left: 50%;
@@ -216,3 +206,65 @@ export default {
 
 
 
+<style>
+
+.header__bg {
+  -webkit-order: 3;
+  position: absolute;
+  top: 100vh;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(#1e2733,#8E2DE2);
+  transform: skewY(-10deg);
+  transform-origin: top left;
+}
+
+.header__bg_1 {
+  position: absolute;
+  top: 20vh;
+  bottom: 0;
+  right: 20vh;
+  left: 20vh;
+  width: 10%;
+  height: 10vh;
+  background-image: linear-gradient(#7F7FD5, #86A8E7);
+}
+
+.header__bg_2 {
+  position: absolute;
+  top: 80vh;
+  bottom: 0;
+  right: 20vh;
+  left: 50vh;
+  width: 40%;
+  height: 10vh;
+  background-image: linear-gradient(#7F7FD5, #86A8E7);
+}
+
+.header__bg_3 {
+  position: absolute;
+  top: 80vh;
+  bottom: 0;
+  right: 0vh;
+  left: 0vh;
+  width: 5%;
+  height: 10vh;
+  background-image: linear-gradient(#7F7FD5, #86A8E7);
+}
+
+.header__bg_4 {
+  position: absolute;
+  top: 50vh;
+  bottom: 0;
+  right: 0vh;
+  left: 50vh;
+  width: 20%;
+  height: 10vh;
+  background-image: linear-gradient(#7F7FD5, #86A8E7);
+}
+
+
+</style>

@@ -41,7 +41,7 @@ new Vue({
 
 new fullpage('#fullpage', {
     anchors: ['page1', 'page2', 'page3'],
-    sectionsColor: ['#1e2733', '#ff5f45', '#0798ec', '#fec401', '#1bcee6', '#ee1a59', '#2c3e4f', '#ba5be9', '#b4b8ab'],
+    sectionsColor: ['#1e2733', '#8E2DE2', '#0798ec', '#fec401', '#1bcee6', '#ee1a59', '#2c3e4f', '#ba5be9', '#b4b8ab'],
     autoScrolling: true,
     scrollBar: false,
     menu: '#menu',
