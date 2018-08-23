@@ -1,9 +1,37 @@
 <template>
   <div id="app">
 
+
+
+
     <full-page id="fullpage" ref="fullpage">
         <div class="section" id="stuff">
-              <md-speed-dial id="menu" class="md-top-left" md-direction="bottom">
+
+
+
+
+
+    <div class="phone-viewport" align="center">
+      <md-bottom-bar md-type="fixed" :md-theme="'bottom-bar-' + theme" md-sync-route>
+        <md-bottom-bar-item md-label="Home" md-icon="home" @click="theme = 'teal'" to="/page3"></md-bottom-bar-item>
+        <md-bottom-bar-item md-label="Pages" md-icon="pages" @click="theme = 'orange'"></md-bottom-bar-item>
+        <md-bottom-bar-item md-label="Posts" md-icon="/assets/icon-whatshot.svg" @click="theme = 'blue'"></md-bottom-bar-item>
+        <md-bottom-bar-item to="/page3"md-label="Favorites" md-icon="favorite" @click="theme = 'red'"></md-bottom-bar-item>
+      </md-bottom-bar>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<md-speed-dial id="menu" class="md-top-left" md-direction="bottom">
       <md-speed-dial-target class="md-primary">
         <md-icon>menu</md-icon>
       </md-speed-dial-target>
@@ -149,8 +177,6 @@ export default {
     stroke-dashoffset: 3060;
   }
 }
-
-
 </style>
 
 
@@ -172,15 +198,21 @@ export default {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
 }
-
-#fullpage .reveal {
-	transform: translateY(100px);
-	opacity: 0;
-	transition: opacity 1s, transform 1s;
-}
-
-#fullpage .active .reveal {
-	transform: translateX(0);
-	opacity: 1;
-}
 </style>
+
+
+
+
+
+<style lang="scss" scoped>
+  .phone-viewport {
+    width: 100%;
+    display: inline-flex;
+    overflow: hidden;
+    border: 1px solid rgba(#000, .26);
+    background: rgba(#000, .06);
+  }
+</style>
+
+
+
