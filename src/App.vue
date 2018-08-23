@@ -47,25 +47,82 @@
 
 
 
-
-
-
-
-
         </div>
 
 
 
         <div class="section">
 
+
+
+
 <!-- Diagonal Line -->
 <div class="header__bg">
-<div class="header__bg_1"></div>
+<div style="
+  position: absolute;
+  top: 30vh;
+  bottom: 0;
+  right: 20vh;
+  left: 20vh;
+  width: 20%;
+  height: 1vh;
+  background-image: linear-gradient(#7F7FD5, #86A8E7);
+  "></div>
+<div style="
+  position: absolute;
+  top: 60vh;
+  bottom: 0;
+  right: 20vh;
+  left: 10vh;
+  width: 50%;
+  height: 1vh;
+  background-image: linear-gradient(#7F7FD5, #86A8E7);
+  "></div>
+<div style="
+  position: absolute;
+  top: 80vh;
+  bottom: 0;
+  right: 20vh;
+  left: 50vh;
+  width: 40%;
+  height: 1vh;
+  background-image: linear-gradient(#7F7FD5, #86A8E7);
+"></div>
+<div style="
+  position: absolute;
+  top: 80vh;
+  bottom: 0;
+  right: 0vh;
+  left: 0vh;
+  width: 5%;
+  height: 1vh;
+  background-image: linear-gradient(#7F7FD5, #86A8E7);
+"></div>
+<div style="
+  position: absolute;
+  top: 50vh;
+  bottom: 0;
+  right: 0vh;
+  left: 50vh;
+  width: 20%;
+  height: 1vh;
+  background-image: linear-gradient(#7F7FD5, #86A8E7);
+"></div>
+
+
 <div class="header__bg_2"></div>
 <div class="header__bg_3"></div>
 <div class="header__bg_4"></div>
 </div>
 
+<div style="position:absolute; top:85vh; left:48.5%;">
+  <div class="mouse"></div>
+  <div class="arrow-scroll">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
 
 
 <h3>Section 2</h3>
@@ -170,6 +227,16 @@ export default {
 </style>
 
 
+
+
+<style>
+.mouse{height:50px;width:35px;border-radius:14px;border:2px solid #fff}.mouse:after{content:'';display:block;height:8px;width:2px;margin:10px auto;background:#fff;position:relative;-webkit-animation:a 1.2s ease infinite;animation:a 1.2s ease infinite}.arrow-scroll{width:35px;margin-top:10px}.arrow-scroll>span{font-family:Arial,sans-serif;display:block;width:9px;height:9px;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-right:2px solid #fff;border-bottom:2px solid #fff;margin:5px auto 3px;-webkit-animation:b 1s infinite;animation:b 1s infinite;-webkit-animation-delay:.2s;animation-delay:.2s}.arrow-scroll>span:first-child{-webkit-animation-delay:.1s;animation-delay:.1s}.arrow-scroll>span:last-child{-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes a{0%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}to{opacity:0;-webkit-transform:translateY(8px);transform:translateY(8px)}}@keyframes a{0%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0)}to{opacity:0;-webkit-transform:translateY(8px);transform:translateY(8px)}}@-webkit-keyframes b{0%{opacity:0}50%{opacity:.5}to{opacity:1}}@keyframes b{0%{opacity:0}50%{opacity:.5}to{opacity:1}}
+</style>
+
+
+
+
+
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -190,10 +257,6 @@ export default {
 }
 </style>
 
-
-
-
-
 <style lang="scss" scoped>
   .phone-viewport {
     width: 100%;
@@ -203,8 +266,6 @@ export default {
     background: rgba(#000, .06);
   }
 </style>
-
-
 
 <style>
 
@@ -222,49 +283,8 @@ export default {
   transform-origin: top left;
 }
 
-.header__bg_1 {
-  position: absolute;
-  top: 20vh;
-  bottom: 0;
-  right: 20vh;
-  left: 20vh;
-  width: 10%;
-  height: 10vh;
-  background-image: linear-gradient(#7F7FD5, #86A8E7);
-}
 
-.header__bg_2 {
-  position: absolute;
-  top: 80vh;
-  bottom: 0;
-  right: 20vh;
-  left: 50vh;
-  width: 40%;
-  height: 10vh;
-  background-image: linear-gradient(#7F7FD5, #86A8E7);
-}
 
-.header__bg_3 {
-  position: absolute;
-  top: 80vh;
-  bottom: 0;
-  right: 0vh;
-  left: 0vh;
-  width: 5%;
-  height: 10vh;
-  background-image: linear-gradient(#7F7FD5, #86A8E7);
-}
-
-.header__bg_4 {
-  position: absolute;
-  top: 50vh;
-  bottom: 0;
-  right: 0vh;
-  left: 50vh;
-  width: 20%;
-  height: 10vh;
-  background-image: linear-gradient(#7F7FD5, #86A8E7);
-}
 
 
 </style>
