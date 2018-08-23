@@ -88,6 +88,7 @@ export default {
 .content2 {
   -webkit-transform: scale(2);
           transform: scale(2);
+  margin-left: 30px
 }
 
 
