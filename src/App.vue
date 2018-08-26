@@ -6,27 +6,25 @@
     <full-page id="fullpage" ref="fullpage">
         <div class="section">
 
-<md-speed-dial id="menu" class="md-top-left" md-direction="bottom">
-      <md-speed-dial-target class="md-primary">
-        <md-icon>menu</md-icon>
-      </md-speed-dial-target>
+<md-menu class="md-top-left" md-direction="bottom">
+        <md-icon md-menu-trigger>menu</md-icon>
 
-      <md-speed-dial-content>
+      <md-menu-content>
 
-        <md-button class="md-icon-button">
+        <md-menu-item>
           <md-icon>directions</md-icon>
           <md-tooltip md-direction="right">Directions</md-tooltip>
-        </md-button>
+        </md-menu-item>
 
-        <md-button class="md-icon-button">
+        <md-menu-item>
           <md-icon>streetview</md-icon>
-        </md-button>
+        </md-menu-item>
 
-        <md-button class="md-plain">
+        <md-menu-item>
         Hello there
-        </md-button>
-      </md-speed-dial-content>
-    </md-speed-dial>
+        </md-menu-item>
+      </md-menu-content>
+    </md-menu>
 
 
         </div>
